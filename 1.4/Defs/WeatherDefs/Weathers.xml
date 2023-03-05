@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Credit to Helixen :D -->
 <Defs>
 	<!-- ================ Generic weathers ================ -->
 	<WeatherDef>
-		<defName>RG_Overcast</defName>
+		<defName>XE_Overcast</defName>
 		<label>overcast</label>
 		<description>Clouds cover the skies, casting various shadows.</description>
 		<repeatable>true</repeatable>
@@ -50,7 +51,7 @@
 		</modExtensions>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_Windy</defName>
+		<defName>XE_Windy</defName>
 		<label>windy</label>
 		<description>Consistent wind that reduces ranged weapon accuracy.</description>
 		<repeatable>true</repeatable>
@@ -87,7 +88,7 @@
 	</WeatherDef>
 	<!-- ================ New rain weathers ================ -->
 	<WeatherDef>
-		<defName>RG_Drizzle</defName>
+		<defName>XE_Drizzle</defName>
 		<label>drizzle</label>
 		<description>Very fine but prominent rain which slightly reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>0~100</temperatureRange>
@@ -95,11 +96,11 @@
 		<accuracyMultiplier>0.9</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>RG_Wet</exposedThought>
+		<exposedThought>XE_Wet</exposedThought>
 		<rainRate>0.5</rainRate>
 		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
 		<ambientSounds>
-			<li>RG_Ambient_Drizzle</li>
+			<li>XE_Ambient_Drizzle</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
@@ -147,7 +148,7 @@
 		</modExtensions>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_Monsoon</defName>
+		<defName>XE_Monsoon</defName>
 		<label>monsoon</label>
 		<description>Extremely intense rainfall and strong winds, extinguishes fires and severely reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-1~999</temperatureRange>
@@ -155,7 +156,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<exposedThought>RG_ExtremelyWet</exposedThought>
+		<exposedThought>XE_ExtremelyWet</exposedThought>
 		<rainRate>3.0</rainRate>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
@@ -222,7 +223,7 @@
 		</modExtensions>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_Hail</defName>
+		<defName>XE_Hail</defName>
 		<label>hail</label>
 		<description>Hard, frozen rain that can injure exposed pawns.</description>
 		<temperatureRange>-999~1.5</temperatureRange>
@@ -240,7 +241,7 @@
 			</points>
 		</commonalityRainfallFactor>
 		<ambientSounds>
-			<li>RG_Ambient_Hail</li>
+			<li>XE_Ambient_Hail</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
@@ -290,14 +291,14 @@
 				<damageToApply>Blunt</damageToApply>
 				<damageRange>0.1~0.5</damageRange>
 				<percentOfPawnsToDealDamage>0.1</percentOfPawnsToDealDamage>
-				<activeOnWeatherPerceived>RG_Hail</activeOnWeatherPerceived>
+				<activeOnWeatherPerceived>XE_Hail</activeOnWeatherPerceived>
 				<worksOnNonFleshPawns>false</worksOnNonFleshPawns>
 			</li>
 		</modExtensions>
 	</WeatherDef>
 	<!-- ================ New snow weathers ================ -->
 	<WeatherDef>
-		<defName>RG_FoggySnow</defName>
+		<defName>XE_FoggySnow</defName>
 		<label>foggy snow</label>
 		<isBad>true</isBad>
 		<description>Heavy snow with fog that reduces ranged weapon accuracy, extinguishes fires and reduces movement speed.</description>
@@ -350,7 +351,7 @@
 		</skyColorsNightMid>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_Blizzard</defName>
+		<defName>XE_Blizzard</defName>
 		<label>blizzard</label>
 		<description>Severe snowstorm with high winds, reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-999~-0.5</temperatureRange>
@@ -369,7 +370,7 @@
 			</points>
 		</commonalityRainfallFactor>
 		<ambientSounds>
-			<li>RG_Ambient_Blizzard</li>
+			<li>XE_Ambient_Blizzard</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
@@ -416,7 +417,7 @@
 	</WeatherDef>
 	<!-- ================ New desert weathers ================ -->
 	<WeatherDef>
-		<defName>RG_FoggySandstorm</defName>
+		<defName>XE_FoggySandstorm</defName>
 		<label>foggy sandstorm</label>
 		<isBad>true</isBad>
 		<description>Winds carrying clouds of sand and fog, reducing movement speed and limiting ranged weapon accuracy.</description>
@@ -424,11 +425,11 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<exposedThought>XE_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Fog</li>
-			<li>RG_Ambient_Sandstorm</li>
+			<li>XE_Ambient_Sandstorm</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>WeatherOverlay_Fog</li>
@@ -476,14 +477,14 @@
 		</modExtensions>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_SandStorm</defName>
+		<defName>XE_SandStorm</defName>
 		<label>sandstorm</label>
 		<description>Strong winds carrying clouds of sand, reduces ranged weapon accuracy and movement speed.</description>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<exposedThought>XE_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
@@ -493,7 +494,7 @@
 			</points>
 		</commonalityRainfallFactor>
 		<ambientSounds>
-			<li>RG_Ambient_Sandstorm</li>
+			<li>XE_Ambient_Sandstorm</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
@@ -534,14 +535,14 @@
 		</modExtensions>
 	</WeatherDef>
 	<WeatherDef>
-		<defName>RG_SandStormHard</defName>
+		<defName>XE_SandStormHard</defName>
 		<label>hard sandstorm</label>
 		<description>Harsh gales carrying clouds of sand, limits ranged weapon accuracy and movement speed.</description>
 		<windSpeedFactor>2.0</windSpeedFactor>
 		<accuracyMultiplier>0.6</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<exposedThought>XE_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
@@ -551,7 +552,7 @@
 			</points>
 		</commonalityRainfallFactor>
 		<ambientSounds>
-			<li>RG_Ambient_Sandstorm</li>
+			<li>XE_Ambient_Sandstorm</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
